@@ -1,0 +1,333 @@
+$primary: #1b2b7c;
+$darkRed: #8c2726;
+$buttonColor: #ad020d;
+$textColorBlack: #2d2019;
+$textColor: #646a89;
+$mainColor: #fb5472;
+$titleColor: #1b2b7c;
+$light: #ffffff;
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+
+body {
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  color: $textColor;
+}
+.preHeader {
+  background: linear-gradient(118deg, #1b2a7c 10.36%, #e14096 88.32%), #1c1850;
+  height: 41px;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  line-height: 41px;
+  text-align: center;
+  span {
+    font-weight: 800;
+  }
+}
+.navbar {
+  .navbar-brand {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.alignRight {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.firstSection {
+  background: url('../images/firstSectionbg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .ratingSection {
+    margin-top: 80px;
+    svg {
+      margin: 0px;
+      padding: 0px;
+      margin-left: -5px;
+      margin-top: 0px;
+      vertical-align: top;
+      margin-top: 4px;
+    }
+    .ratingText {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15px; /* 142.857% */
+      text-transform: capitalize;
+      color: $textColor;
+      padding-top: 0px;
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+  h5 {
+    color: #1b2b7c;
+    font-family: Aleo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    span {
+      font-weight: 700;
+    }
+  }
+  h2 {
+    color: $titleColor;
+    font-family: Aleo;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 54px */
+    text-transform: capitalize;
+    margin-top: 15px;
+  }
+  p {
+    color: $textColor;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    span {
+      font-weight: 700;
+    }
+  }
+  .bigGreenButton {
+    margin-top: 40px;
+    width: 70%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .ratingCard {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+    padding: 20px;
+    width: 85%;
+    p {
+      color: #000;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 20px; /* 142.857% */
+    }
+  }
+  .rcWrapper {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    .rcImg {
+      float: left;
+    }
+    .rcDesc {
+      float: left;
+      h6 {
+        color: $primary;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+      p {
+        color: #8e8e8e;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+    }
+    .rcRating {
+      float: right;
+      width: 78px;
+      svg {
+        margin-left: -5px;
+      }
+    }
+  }
+  .servicesCard {
+    margin: 0px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 10px 26px 0px rgba(36, 73, 168, 0.15);
+    background: url('../images/scbg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    padding: 10px;
+    text-align: center;
+    svg {
+      margin-top: 25px;
+    }
+    h5 {
+      color: $primary;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 19.2px */
+      text-transform: capitalize;
+    }
+    p {
+      text-align: center;
+      color: $textColor;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+    }
+  }
+  .scRow {
+    margin-top: 40px;
+    padding-bottom: 60px;
+  }
+  .scRow div:nth-child(even) {
+    margin-top: 60px;
+  }
+}
+.bigGreenButton {
+  border-radius: 30px;
+  background: linear-gradient(
+    263deg,
+    rgba(128, 198, 0, 0.99) 0%,
+    rgba(72, 142, 89, 0.99) 100%
+  );
+  box-shadow: 0px 15px 25px 0px rgba(39, 172, 71, 0.25);
+  padding-right: 80px;
+  padding-left: 80px;
+}
+@media screen and (max-width: 1300px) {
+  .firstSection {
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  display: inline-block;
+  top: 0;
+}
+@media screen and (max-width: 992px) {
+  .alignRight {
+    .btn-primary {
+      border-radius: 30px;
+      box-shadow: 0px 15px 25px 0px rgba(27, 43, 124, 0.15);
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .navbar {
+    padding: 10px;
+    svg {
+      circle {
+        stroke: #ffffff;
+      }
+      text-align: center;
+      margin-right: 10px;
+    }
+    .active {
+      svg {
+        circle {
+          stroke: $mainColor;
+        }
+      }
+    }
+  }
+  .firstSection {
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .bigGreenButton {
+      width: 100%;
+    }
+    .ratingSection {
+      margin-top: 40px;
+    }
+    .ratingCard {
+      width: 100%;
+    }
+    .scRow {
+      margin-top: 20px;
+    }
+    .scRow div:nth-child(even) {
+      margin-top: 20px;
+    }
+    .scRow div:nth-child(odd) {
+      margin-top: 20px;
+    }
+    .scRow div:nth-child(1) {
+      margin-top: 0px;
+    }
+    .scRow div:nth-child(2) {
+      margin-top: 0px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar {
+    #navbarsExample09 {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .nav-link {
+      text-align: center;
+      color: $textColor;
+      span {
+        width: 100%;
+        text-align: middle;
+        display: inline-block;
+      }
+      svg {
+        circle {
+          stroke: #ffffff;
+        }
+        text-align: center;
+      }
+    }
+    .active {
+      span {
+        color: $mainColor;
+      }
+      svg {
+        circle {
+          stroke: $mainColor;
+        }
+      }
+    }
+  }
+  .alignRight {
+    .btn-primary {
+      border-radius: 30px;
+      box-shadow: 0px 15px 25px 0px rgba(27, 43, 124, 0.15);
+      margin-left: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
