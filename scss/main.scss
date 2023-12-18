@@ -221,10 +221,10 @@ body {
   }
 }
 header {
-  position: sticky;
-  position: -webkit-sticky;
-  display: inline-block;
-  top: 0;
+  // position: sticky;
+  // position: -webkit-sticky;
+  // display: inline-block;
+  // top: 0;
 }
 @media screen and (max-width: 992px) {
   .alignRight {
